@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2290%22>🤡</text></svg>" />
+
+<title>Beatmaker</title>
+</head>
+
+
+<body>
+<div class="sequencer">
+
+    <!-- KICK -->
+    <div class="kick-track">
+    <div class="controls">
+        <h1>Kick</h1>
+        <button class="mute kick-volume" data-track="0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" clip-rule="evenodd" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+              </svg> 
+        </button>
+        <select name="kick-select" id="kick-select">
+            <option value="Sounds/kick-classic.wav">Classic Kick</option>
+            <option value="Sounds/kick-808.wav">808 Kick</option>
+            <option value="Sounds/kick-heavy.wav">Kick Heavy</option>
+        </select>
+    </div>
+    <div class="kick">
+        <div class="pad kick-pad b0"></div>
+        <div class="pad kick-pad b1"></div>
+        <div class="pad kick-pad b2"></div>
+        <div class="pad kick-pad b3"></div>
+        <div class="pad kick-pad b4"></div>
+        <div class="pad kick-pad b5"></div>
+        <div class="pad kick-pad b6"></div>
+        <div class="pad kick-pad b7"></div>
+    </div>
+    </div>
+
+
+    <!-- SNARE  -->
+    <div class="snare-track">
+        <div class="controls">
+            <h1>Snare</h1>
+            <button class="mute snare-volume" data-track="1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" clip-rule="evenodd" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+                  </svg> 
+            </button>
+            <select name="snare-select" id="snare-select">
+                <option value="Sounds/snare-acoustic01.wav">Classic Snare</option>
+                <option value="Sounds/snare-808.wav">808 Snare</option>
+                <option value="Sounds/snare-vinyl02.wav">Snare Heavy</option>
+            </select>
+        </div>
+        <div class="snare">
+            <div class="pad snare-pad b0"></div>
+            <div class="pad snare-pad b1"></div>
+            <div class="pad snare-pad b2"></div>
+            <div class="pad snare-pad b3"></div>
+            <div class="pad snare-pad b4"></div>
+            <div class="pad snare-pad b5"></div>
+            <div class="pad snare-pad b6"></div>
+            <div class="pad snare-pad b7"></div>
+        </div>
+        </div>
+
+
+            <!-- HIHAT  -->
+    <div class="snare-track">
+        <div class="controls">
+            <h1>Hihat</h1>
+            <button class="mute hihat-volume" data-track="2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" clip-rule="evenodd" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+                  </svg> 
+            </button>
+            <select name="hithat-select" id="hihat-select">
+                <option value="Sounds/hihat-acoustic01.wav">Hihat acoustic</option>
+                <option value="Sounds/hihat-808.wav">808 Hihat</option>
+                <option value="Sounds/hihat-electro.wav">Hihat Electro</option>
+            </select>
+        </div>
+        <div class="snare">
+            <div class="pad hihat-pad b0"></div>
+            <div class="pad hihat-pad b1"></div>
+            <div class="pad hihat-pad b2"></div>
+            <div class="pad hihat-pad b3"></div>
+            <div class="pad hihat-pad b4"></div>
+            <div class="pad hihat-pad b5"></div>
+            <div class="pad hihat-pad b6"></div>
+            <div class="pad hihat-pad b7"></div>
+        </div>
+        </div>
+
+
+
+</div>
+
+<button class="play">Play</button>
+
+    <audio src="Sounds/kick-classic.wav" class="kick-sound"></audio>
+    <audio src="Sounds/snare-acoustic01.wav" class="snare-sound"></audio>
+    <audio src="Sounds/hihat-acoustic01.wav" class="hihat-sound"></audio>
+
+<script src="app.js"></script>
+</body>
+</html>
