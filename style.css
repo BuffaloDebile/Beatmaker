@@ -1,4 +1,14 @@
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* @layer components { 
+    
+    .style-tame //add style here//  
+} */
+
 
 i,
 svg {
