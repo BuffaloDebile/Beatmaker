@@ -14,3 +14,15 @@ i,
 svg {
     pointer-events: none;
 }
+
+.hihat-pad.active {
+     background-color: #A855F7;
+}
+
+.snare-pad.active {
+    background-color: #14b8a6;
+}
+
+.kick-pad.active {
+    background-color: #0EA5E9;
+}
