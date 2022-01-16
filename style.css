@@ -26,3 +26,14 @@ svg {
 .kick-pad.active {
     background-color: #0EA5E9;
 }
+
+@keyframes playTrack {
+    from {
+        transform: scale(1);
+
+    }
+    to {
+transform: scale(1.1);
+
+    }
+}
