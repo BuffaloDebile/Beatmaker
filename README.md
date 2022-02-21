@@ -1,6 +1,6 @@
 ﻿<h1>An online Beatmaker to learn javascript</h1>
 
-<p>A live version of the project can be found at this link => <br> https://determined-payne-385048.netlify.app</p>
+<p>A live version of the project can be found at this link => <br> https://beat-maker-app-js.netlify.app</p>
 
 <h2>This Beatmaker is the second exercise of Dev Ed's Javasript course and my second Javscript Exercise</h2>
 
